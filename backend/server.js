@@ -25,3 +25,6 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   logger.info(`Server is running smoothly on port ${PORT}`);
 });
+
+const authRoutes = require('./routes/authRoutes');
+app.use('/api/auth', authRoutes);
