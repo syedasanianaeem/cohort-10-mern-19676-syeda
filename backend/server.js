@@ -28,3 +28,6 @@ app.listen(PORT, () => {
 
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
+
+const noteRoutes = require('./routes/noteRoutes');
+app.use('/api/notes', noteRoutes);
